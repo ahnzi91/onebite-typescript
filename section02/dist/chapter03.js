@@ -15,9 +15,9 @@ let dog = {
 user = {
     name: "홍길동",
 };
+// API KEY처럼 절대 수정되어서는 안되는 프로퍼티는 readonly를 붙여줍니다.
 let config = {
     apiKey: "MY API KEY",
 };
-config.apiKey = "hacked";
-console.log(config);
 export {};
+// config.apiKey = "hacked";
