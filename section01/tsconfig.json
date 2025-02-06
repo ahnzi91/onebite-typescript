@@ -1,0 +1,35 @@
+{
+  // compilerOptions
+  // -> 타입스크립트를 자바스크립트로 변환하는 과정이나 타입 검사 등의 상세한 옵션들을 설정할 때 compilerOptions 항목 아래에 설정해준다.
+  "compilerOptions": {
+    // skipLibCheck
+    // -> 타입 정의 파일(.d, .ts 파일)의 타입 검사를 생략하는 옵션.
+    // -> @types 20버전 이후
+    "skipLibCheck": true,
+
+    // target
+    // -> 타입스크립트 파일을 컴파일해서 만들어지는 자바스크립트 코드의 버전을 설정하는 옵션
+    "target": "ESNext", // ESNext : 자바스크립트 최신 버전
+
+    // module
+    // -> 변환되는 자바스크립트 코드에 모듈 시스템을 설정하는 옵션
+    "module": "ESNext", // ESNext : 자바스크립트 최신 버전
+
+    // outDir
+    // -> 컴파일 결과 생성될 자바스크립트 파일들의 위치를 지정해주는 옵션
+    "outDir": "dist",
+
+    // strict
+    // -> 타입스크립트 컴파일러가 타입을 검사할 때 얼마나 엄격하게 할지 결정하는 옵션
+    "strict": false,
+
+    // moduleDetection
+    // -> 타입스크립트가 각각의 파일을 어떤 모듈로 감지할 것인지 결정하게 해주는 옵션
+    "moduleDetection": "force"
+  },
+
+  // include
+  // -> tsc가 컴파일할 타입스크립트 파일들의 범위와 위치를 알려주는 옵션
+  // ex) "include": ["src"] -> src 폴더 아래 모든 ts 파일을 컴파일 해준다.
+  "include": ["src"]
+}
