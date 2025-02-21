@@ -18,4 +18,14 @@ let user2 = {
     bio: "운동하는 개발자",
     location: "서울시 도봉구",
 };
+let countryCodes = {
+    Korea: "ko",
+    UnitedState: "us",
+    UnitedKingdom: "uk",
+};
+let countryNumberCodes = {
+    Korea: 410,
+    // UnitedState: 840,
+    // UnitedKingdom: 826,
+};
 export {};
